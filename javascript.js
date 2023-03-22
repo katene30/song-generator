@@ -25,6 +25,15 @@ function getRandomTempo(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
   }
 
+function getRandomKey(){
+    // const notes = ["C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb", "G", "G#/Ab", "A", "A#/Bb", "B"]
+    // const majorOrMinor = ["Major", "Minor"]
+
+    let key = notes[getRandomInt(notes.length)] + " " + majorOrMinor[getRandomInt(majorOrMinor.length)]
+
+    return key
+}
+
 function newSong(){
     // Get Genre
     const genre = getGenre()
@@ -41,6 +50,10 @@ function newSong(){
 
     // Get Tempo
     document.getElementById("tempo").innerHTML = getRandomTempo(60,200) + " bpm"
+    
+    // Get Key
+    document.getElementById("key").innerHTML = getRandomKey()
+
 
     
 }
