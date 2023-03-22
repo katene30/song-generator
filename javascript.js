@@ -26,9 +26,6 @@ function getRandomTempo(min, max) {
   }
 
 function getRandomKey(){
-    // const notes = ["C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb", "G", "G#/Ab", "A", "A#/Bb", "B"]
-    // const majorOrMinor = ["Major", "Minor"]
-
     let key = notes[getRandomInt(notes.length)] + " " + majorOrMinor[getRandomInt(majorOrMinor.length)]
 
     return key
