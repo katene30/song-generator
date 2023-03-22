@@ -4,8 +4,7 @@ const genres = [
         subgenre:["Art Punk", "Alternative Rock", "Britpunk", "College Rock", "Crossover Thrash", "Crust Punk (thx Haug)", "Emotional Hardcore (emo / emocore)", "Experimental Rock", "Folk Punk", "Goth / Gothic Rock", "Grunge", "Hardcore Punk", "Hard Rock", "Indie Rock", "Lo-fi", "Musique Concrète", "New Wave", "Progressive Rock", "Punk", "Shoegaze", "Steampunk"],
     },
     {
-        name: "anime",
-        subgenre:["Anime"],
+        name: "Anime",
     },
     {
         name: "blues",
@@ -32,8 +31,7 @@ const genres = [
         subgenre:["Club / Club Dance", "Breakcore", "Breakbeat / Breakstep", "4-Beat", "Acid Breaks", "Baltimore Club", "Big Beat", "Breakbeat Hardcore", "Broken Beat", "Florida Breaks", "Nu Skool Breaks", "Brostep", "Chillstep", "Deep House", "Dubstep", "Electro House", "Electroswing", "Exercise", "Future Garage", "Garage", "Glitch Hop", "Glitch Pop", "Grime", "Hardcore", "Bouncy House", "Bouncy Techno", "Breakcore", "Digital Hardcore", "Doomcore", "Dubstyle", "Gabber", "Happy Hardcore", "Hardstyle", "Jumpstyle", "Makina", "Speedcore", "Terrorcore", "Uk Hardcore", , , "Hard Dance", "Hi-NRG / Eurodance", "Horrorcore (thx Matt)", "House", "Acid House", "Chicago House", "Deep House", "Diva House", "Dutch House", "Electro House", "Freestyle House", "French House", "Funky House", "Ghetto House", "Hardbag", "Hip House", "Italo House", "Latin House", "Minimal House", "Progressive House", "Rave Music", "Swing House", "Tech House", "Tribal House", "Tropical House", "UK Hard House", "US Garage", "Vocal House", "Jackin House", "Jungle / Drum’n’bass", "Liquid Dub", "Regstep", "Speedcore", "Techno", "Acid Techno", "Detroit Techno", "Free Tekno", "Ghettotech", "Minimal", "Nortec", "Schranz", "Techno-Dnb", "Technopop", "Tecno Brega", "Toytown Techno", "Trance", "Acid Trance", "Acid-House", "Classic Trance", "Dark Psy", "Deep House", "Dream Trance", "Goa Trance", "Dark Psytrance", "Full on", "Psybreaks", "Psyprog", "Suomisaundi", "Hard Trance", "Prog. Trance", "Psy-Trance", "Minimal Techno", "Tech House", "Tech Trance", "Uplifting Trance", "Orchestral Uplifting", "Vocal Trance", "Trap"],
     },
     {
-        name: "disney",
-        subgenre:["Disney"],
+        name: "Disney",
     },
     {
         name: "easyListening",
@@ -60,20 +58,17 @@ const genres = [
         subgenre:["CCM", "Christian Metal", "Christian Pop", "Christian Rap", "Christian Rock", "Classic Christian", "Contemporary Gospel", "Gospel", "Christian & Gospel", "Praise & Worship", "Qawwali", "Southern Gospel", "Traditional Gospel"],
     },
     {
-        name: "instrumental",
-        subgenre:["Instrumental"],
+        name: "Instrumental",
     },
     {
-        name: "jpop",
-        subgenre:["Jpop"],
+        name: "Jpop",
     },
     {
         name: "jazz",
         subgenre:["Acid Jazz", "Afro-Cuban Jazz", "Avant-Garde Jazz", "Bebop", "Big Band", "Blue Note", "British Dance Band (Jazz)", "Cape Jazz", "Chamber Jazz", "Contemporary Jazz", "Continental Jazz", "Cool Jazz", "Crossover Jazz", "Dark Jazz", "Dixieland", "Early Jazz", "Electro Swing (Jazz)", "Ethio-jazz", "Ethno-Jazz", "European Free Jazz", "Free Funk (Avant-Garde / Funk Jazz)", "Free Jazz", "Fusion", "Gypsy Jazz", "Hard Bop", "Indo Jazz", "Jazz Blues", "Jazz-Funk (see Free Funk)", "Jazz-Fusion", "Jazz Rap", "Jazz Rock", "Kansas City Jazz", "Latin Jazz", "M-Base Jazz", "Mainstream Jazz", "Modal Jazz", "Neo-Bop", "Neo-Swing", "Nu Jazz", "Orchestral Jazz", "Post-Bop", "Punk Jazz", "Ragtime", "Ska Jazz", "Skiffle (also Folk)", "Smooth Jazz", "Soul Jazz", "Swing Jazz", "Straight-Ahead Jazz", "Trad Jazz", "Third Stream", "Jazz-Funk", "Free Jazz", "West Coast Jazz"],
     },
     {
-        name: "kpop",
-        subgenre:["Kpop"],
+        name: "Kpop",
     },
     {
         name: "latin",
@@ -88,8 +83,7 @@ const genres = [
         subgenre:["Environmental", "Healing", "Meditation", "Nature", "Relaxation", "Travel"],
     },
     {
-        name: "opera",
-        subgenre:["Opera"],
+        name: "Opera",
     },
     {
         name: "pop",
@@ -112,8 +106,7 @@ const genres = [
         subgenre:["Acid Rock", "Adult-Oriented Rock", "Afro Punk", "Adult Alternative", "Alternative Rock", "American Traditional Rock", "Anatolian Rock", "Arena Rock", "Art Rock", "Blues-Rock", "British Invasion", "Cock Rock", "Death Metal / Black Metal", "Doom Metal", "Glam Rock", "Gothic Metal", "Grind Core", "Hair Metal", "Hard Rock", "Math Metal", "Math Rock", "Metal", "Metal Core", "Noise Rock (genre – Japanoise)", "Jam Bands", "Post Punk", "Post Rock", "Prog-Rock/Art Rock", "Progressive Metal", "Psychedelic", "Rock & Roll", "Rockabilly", "Roots Rock", "Singer/Songwriter", "Southern Rock", "Spazzcore", "Stoner Metal (duuuude)", "Surf", "Technical Death Metal", "Tex-Mex", "Thrash Metal", "Time Lord Rock (Trock)", "Trip-hop", "Yacht Rock (soft rock)"],
     },
     {
-        name: "spokenWord",
-        subgenre:["Spoken Word"],
+        name: "Spoken Word",
     },
     {
         name: "vocal",

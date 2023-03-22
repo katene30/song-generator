@@ -22,12 +22,15 @@ function getSubgenre(genre){
 function newSong(){
     // Get Genre
     const genre = getGenre()
-    const subgenre = getSubgenre(genre)
     document.getElementById("genre").innerHTML = formatString(genre.name)
     
     // Get Subgenre
     if(genre.subgenre){
+        const subgenre = getSubgenre(genre)
         document.getElementById("subgenre").innerHTML = subgenre
+    }
+    else{
+        document.getElementById("subgenre").innerHTML = ""
     }
 
 
