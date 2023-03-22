@@ -19,6 +19,12 @@ function getSubgenre(genre){
     return subgenre
 }
 
+function getRandomTempo(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+
 function newSong(){
     // Get Genre
     const genre = getGenre()
@@ -33,6 +39,8 @@ function newSong(){
         document.getElementById("subgenre").innerHTML = ""
     }
 
+    // Get Tempo
+    document.getElementById("tempo").innerHTML = getRandomTempo(60,200) + " bpm"
 
     
 }
