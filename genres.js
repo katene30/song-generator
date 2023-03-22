@@ -11,7 +11,7 @@ const genres = [
         subgenre:["Acoustic Blues", "African Blues", "Blues Rock", "Blues Shouter", "British Blues", "Canadian Blues", "Chicago Blues", "Classic Blues", "Classic Female Blues", "Contemporary Blues", "Contemporary R&B", "Country Blues", "Dark Blues", "Delta Blues", "Detroit Blues", "Doom Blues", "Electric Blues", "Folk Blues", "Gospel Blues", "Harmonica Blues", "Hill Country Blues", "Hokum Blues", "Jazz Blues", "Jump Blues", "Kansas City Blues", "Louisiana Blues", "Memphis Blues", "Modern Blues", "New Orlean Blues", "NY Blues", "Piano Blues", "Piedmont Blues", "Punk Blues", "Ragtime Blues", "Rhythm Blues", "Soul Blues", "St. Louis Blues", "Soul Blues", "Swamp Blues", "Texas Blues", "Urban Blues", "Vandeville", "West Coast Blues"],
     },
     {
-        name: "childrenMusic",
+        name: "Children Music",
         subgenre:["Lullabies", "Sing-Along", "Stories"],
     },
     {
@@ -34,7 +34,7 @@ const genres = [
         name: "Disney",
     },
     {
-        name: "easyListening",
+        name: "easy Listening",
         subgenre:["Background", "Bop", "Elevator", "Furniture", "Lounge", "Middle of the Road", "Swing"],
     },
     {
@@ -46,7 +46,7 @@ const genres = [
         subgenre:["American Folk Revival", "Anti-Folk", "British Folk Revival", "Contemporary Folk", "Filk Music", "Freak Folk", "Indie Folk", "Industrial Folk", "Neofolk", "Progressive Folk", "Psychedelic Folk", "Sung Poetry", "Techno-Folk"],
     },
     {
-        name: "hipHopRap",
+        name: "hip Hop Rap",
         subgenre: ["Alternative Rap", "Avant-Garde", "Bounce", "Chap Hop", "Christian Hip Hop", "Conscious Hip Hop", "Country-Rap", "Grunk", "Crunkcore", "Cumbia Rap", "Dirty South", "East Coast", "Brick City Club", "Hardcore Hip Hop", "Mafioso Rap", "New Jersey Hip Hop", , , "Freestyle Rap", "G-Funk", "Gangsta Rap", "Golden Age", "Grime", "Hardcore Rap", "Hip-Hop", "Hip Pop", "Horrorcore", "Hyphy", "Industrial Hip Hop", "Instrumental Hip Hop", "Jazz Rap", "Latin Rap", "Low Bap", "Lyrical Hip Hop", "Merenrap", "Midwest Hip Hop", "Chicago Hip Hop", "Detroit Hip Hop", "Horrorcore", "St. Louis Hip Hop", "Twin Cities Hip Hop", "Motswako", "Nerdcore", "New Jack Swing", "New School Hip Hop", "Old School Rap", "Rap", "Trap", "Turntablism", "Underground Rap", "West Coast Rap"],
     },
     {
