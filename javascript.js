@@ -37,7 +37,7 @@ function newSong(){
     document.getElementById("genre").innerHTML = formatString(genre.name)
     
     // Get Subgenre
-    if(genre.subgenre){
+    if(genre.subgenre && document.getElementById("subgenreCheck").checked){
         const subgenre = getSubgenre(genre)
         document.getElementById("subgenre").innerHTML = subgenre
     }
