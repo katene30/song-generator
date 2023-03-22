@@ -8,23 +8,27 @@ function formatString(string) {
 }
 
 function getGenre(){
-    let genreIndex = getRandomInt(genre.length)
-    let genreName = genre[genreIndex].name
-    let genreRaw = genre[genreName]
-    return genreName
+    let genreIndex = getRandomInt(genres.length)
+    let genre = genres[genreIndex]
+    return genre
 }
 
-function getSubGenre(genre){
-
+function getSubgenre(genre){
+    let subGenrreIndex = getRandomInt(genre.subgenre.length)
+    let subgenre = genre.subgenre[subGenrreIndex]
+    return subgenre
 }
 
 function newSong(){
     // Get Genre
     const genre = getGenre()
-
-    document.getElementById("genre").innerHTML = formatString(genre)
-
-    // Get Sub Genre
+    const subgenre = getSubgenre(genre)
+    document.getElementById("genre").innerHTML = formatString(genre.name)
+    
+    // Get Subgenre
+    if(genre.subgenre){
+        document.getElementById("subgenre").innerHTML = subgenre
+    }
 
 
     

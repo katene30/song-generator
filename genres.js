@@ -1,4 +1,4 @@
-const genre = [
+const genres = [
     {
         name: "alternative",
         subgenre:["Art Punk", "Alternative Rock", "Britpunk", "College Rock", "Crossover Thrash", "Crust Punk (thx Haug)", "Emotional Hardcore (emo / emocore)", "Experimental Rock", "Folk Punk", "Goth / Gothic Rock", "Grunge", "Hardcore Punk", "Hard Rock", "Indie Rock", "Lo-fi", "Musique Concrète", "New Wave", "Progressive Rock", "Punk", "Shoegaze", "Steampunk"],
@@ -93,7 +93,7 @@ const genre = [
     },
     {
         name: "pop",
-        subgenre:["Adult Contemporary", "Arab Pop", "Baroque", "Britpop", "Bubblegum Pop", "Chamber Pop", "Chanson", "Christian Pop", "Classical Crossover", "Europop", "Austropop", "Balkan Pop", "French Pop", "Latin Pop", "Laïkó", "Nederpop", "Russian Pop", "Dance Pop", "Dream Pop", "Electro Pop", "Iranian Pop", "Jangle Pop", "Latin Ballad", "Levenslied", "Louisiana Swamp Pop", "Mexican Pop", "Motorpop", "New Romanticism", "Orchestral Pop", "Pop Rap", "Popera", "Pop/Rock", "Pop Punk", "Power Pop", "Psychedelic Pop", "Schlager", "Soft Rock", "Sophisti-Pop", "Space Age Pop", "Sunshine Pop", "Surf Pop", "Synthpop", "Teen Pop", "Traditional Pop Music", "Turkish Pop", "Vispop", "Wonky Pop"],
+        subgenre:["Adult Contemporary", "Arab Pop", "Baroque", "Britpop", "Bubblegum Pop", "Chamber Pop", "Chanson", "Christian Pop", "Classical Crossover", "Europop", "Austropop", "Balkan Pop", "French Pop", "Latin Pop", "Nederpop", "Russian Pop", "Dance Pop", "Dream Pop", "Electro Pop", "Iranian Pop", "Jangle Pop", "Latin Ballad", "Levenslied", "Louisiana Swamp Pop", "Mexican Pop", "Motorpop", "New Romanticism", "Orchestral Pop", "Pop Rap", "Popera", "Pop/Rock", "Pop Punk", "Power Pop", "Psychedelic Pop", "Schlager", "Soft Rock", "Sophisti-Pop", "Space Age Pop", "Sunshine Pop", "Surf Pop", "Synthpop", "Teen Pop", "Traditional Pop Music", "Turkish Pop", "Vispop", "Wonky Pop"],
     },
     {
         name: "rnb",
