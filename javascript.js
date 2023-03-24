@@ -31,18 +31,25 @@ function lookUpGenreByGenreName(genreName){
 function setSubGenre(genre, subgenre){
 
     if(genre.subgenre && document.getElementById("subgenreCheck").checked){
+        document.getElementById("subgenre").style.visibility = "visible"
         document.getElementById("subgenre").innerHTML = subgenre
-        document.getElementById("subgenre").style.visibility == "visible"
     }
     else{
-        document.getElementById("subgenre").style.visibility == "hidden"
+        document.getElementById("subgenre").style.visibility = "hidden"
     }
 }
 
 function toggleSubgenre(){
+    let subgenre = document.getElementById("subgenre").textContent
     let genre = lookUpGenreByGenreName(document.getElementById("genre").textContent)
     if(genre.subgenre && document.getElementById("subgenreCheck").checked){
-        document.getElementById("subgenre").style.visibility = "visible"
+        if(correctSubgenre(genre,subgenre)){
+            document.getElementById("subgenre").style.visibility = "visible"
+        }else{
+            let newSubgenre = getSubgenre(genre)
+            
+            setSubGenre(genre, newSubgenre)
+        }
 
     }else{
         document.getElementById("subgenre").style.visibility = "hidden"
@@ -59,6 +66,10 @@ function getRandomKey(){
     let key = notes[getRandomInt(notes.length)] + " " + majorOrMinor[getRandomInt(majorOrMinor.length)]
 
     return key
+}
+
+function correctSubgenre(genre, subgenre){
+    return genre.subgenre.some(genreSubgenre => genreSubgenre == subgenre)
 }
 
 
