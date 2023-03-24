@@ -29,3 +29,8 @@ If you wish to contribute to the Song Generator project or report any bugs, plea
 ## Authors
 
 - katene
+
+## Stretch Goals
+
+- Reshuffle Subgenre
+- Add another genre to mix with
