@@ -22,6 +22,35 @@ function getSubgenre(genre){
     return subgenre
 }
 
+function lookUpGenre(genreName){
+
+    let genre = genres.find(genre => genre.name.replace(/\s/g,'') == genreName.replace(/\s/g,''))
+    return genre
+}
+
+function setSubGenre(genre, subgenre){
+    if(genre.subgenre && document.getElementById("subgenreCheck").checked){
+        document.getElementById("subgenre").innerHTML = subgenre
+    }
+    else{
+        document.getElementById("subgenre").innerHTML = ""
+    }
+}
+
+function toggleSubgenre(){
+    if(document.getElementById("subgenreCheck").checked){
+        let genreName = document.getElementById("genre").textContent
+        let genre = lookUpGenre(genreName)
+
+        if(genre.subgenre){
+            let subgenre = getSubgenre(genre)
+            setSubGenre(genre, subgenre)
+        }
+    }else{
+        document.getElementById("subgenre").innerHTML = ""
+    }
+}
+
 function getRandomTempo(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -34,18 +63,17 @@ function getRandomKey(){
     return key
 }
 
+
+
 function newSong(){
     // Get Genre
     const genre = getGenre()
     document.getElementById("genre").innerHTML = formatString(genre.name)
     
     // Get Subgenre
-    if(genre.subgenre && document.getElementById("subgenreCheck").checked){
+    if(genre.subgenre){
         const subgenre = getSubgenre(genre)
-        document.getElementById("subgenre").innerHTML = subgenre
-    }
-    else{
-        document.getElementById("subgenre").innerHTML = ""
+        setSubGenre(genre, subgenre)
     }
 
     // Get Tempo
