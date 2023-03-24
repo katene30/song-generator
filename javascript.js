@@ -29,25 +29,25 @@ function lookUpGenre(genreName){
 }
 
 function setSubGenre(genre, subgenre){
+
     if(genre.subgenre && document.getElementById("subgenreCheck").checked){
         document.getElementById("subgenre").innerHTML = subgenre
     }
     else{
-        document.getElementById("subgenre").innerHTML = ""
+        document.getElementById("subgenre").style.visibility == "hiddenn"
     }
 }
 
 function toggleSubgenre(){
     if(document.getElementById("subgenreCheck").checked){
-        let genreName = document.getElementById("genre").textContent
-        let genre = lookUpGenre(genreName)
+        document.getElementById("subgenre").style.visibility = "visible"
 
         if(genre.subgenre){
             let subgenre = getSubgenre(genre)
             setSubGenre(genre, subgenre)
         }
     }else{
-        document.getElementById("subgenre").innerHTML = ""
+        document.getElementById("subgenre").style.visibility = "hidden"
     }
 }
 
@@ -74,6 +74,8 @@ function newSong(){
     if(genre.subgenre){
         const subgenre = getSubgenre(genre)
         setSubGenre(genre, subgenre)
+    }else{
+        document.getElementById("subgenre").style.visibility = "hidden"
     }
 
     // Get Tempo
