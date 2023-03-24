@@ -22,7 +22,7 @@ function getSubgenre(genre){
     return subgenre
 }
 
-function lookUpGenre(genreName){
+function lookUpGenreByGenreName(genreName){
 
     let genre = genres.find(genre => genre.name.replace(/\s/g,'') == genreName.replace(/\s/g,''))
     return genre
@@ -32,20 +32,18 @@ function setSubGenre(genre, subgenre){
 
     if(genre.subgenre && document.getElementById("subgenreCheck").checked){
         document.getElementById("subgenre").innerHTML = subgenre
+        document.getElementById("subgenre").style.visibility == "visible"
     }
     else{
-        document.getElementById("subgenre").style.visibility == "hiddenn"
+        document.getElementById("subgenre").style.visibility == "hidden"
     }
 }
 
 function toggleSubgenre(){
-    if(document.getElementById("subgenreCheck").checked){
+    let genre = lookUpGenreByGenreName(document.getElementById("genre").textContent)
+    if(genre.subgenre && document.getElementById("subgenreCheck").checked){
         document.getElementById("subgenre").style.visibility = "visible"
 
-        if(genre.subgenre){
-            let subgenre = getSubgenre(genre)
-            setSubGenre(genre, subgenre)
-        }
     }else{
         document.getElementById("subgenre").style.visibility = "hidden"
     }
@@ -71,8 +69,9 @@ function newSong(){
     document.getElementById("genre").innerHTML = formatString(genre.name)
     
     // Get Subgenre
-    if(genre.subgenre){
+    if(genre.subgenre && document.getElementById("subgenreCheck").checked){
         const subgenre = getSubgenre(genre)
+        document.getElementById("subgenre").style.visibility = "visible"
         setSubGenre(genre, subgenre)
     }else{
         document.getElementById("subgenre").style.visibility = "hidden"
