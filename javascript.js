@@ -42,17 +42,19 @@ function setSubGenre(genre, subgenre){
 function toggleSubgenre(){
     let subgenre = document.getElementById("subgenre").textContent
     let genre = lookUpGenreByGenreName(document.getElementById("genre").textContent)
-    if(genre.subgenre && document.getElementById("subgenreCheck").checked){
-        if(correctSubgenre(genre,subgenre)){
-            document.getElementById("subgenre").style.visibility = "visible"
+    if(genre){
+        if(genre.subgenre && document.getElementById("subgenreCheck").checked){
+            if(correctSubgenre(genre,subgenre)){
+                document.getElementById("subgenre").style.visibility = "visible"
+            }else{
+                let newSubgenre = getSubgenre(genre)
+                
+                setSubGenre(genre, newSubgenre)
+            }
+    
         }else{
-            let newSubgenre = getSubgenre(genre)
-            
-            setSubGenre(genre, newSubgenre)
+            document.getElementById("subgenre").style.visibility = "hidden"
         }
-
-    }else{
-        document.getElementById("subgenre").style.visibility = "hidden"
     }
 }
 
@@ -71,6 +73,7 @@ function getRandomKey(){
 function correctSubgenre(genre, subgenre){
     return genre.subgenre.some(genreSubgenre => genreSubgenre == subgenre)
 }
+
 
 
 
